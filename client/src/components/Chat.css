@@ -1,0 +1,105 @@
+.outerContainer {
+  height: 100vh;
+  width: 100vw;
+}
+.m--20 {
+  margin: 20px;
+}
+.p--20 {
+  padding: 20px;
+}
+.innerContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 4px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 3px 3px #0000001c;
+}
+
+@media only screen and (min-width: 768px) {
+  .innerContainer {
+    max-width: 60%;
+    max-height: 85%;
+  }
+}
+.infoBar {
+  grid-column: span 8;
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px 4px 0 0;
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(100, 100, 100);
+  color: #f7f7f7;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+.messages {
+  grid-row: span 10;
+  grid-column: span 6;
+  background-color: rgb(238, 238, 238);
+  margin-right: 4px;
+}
+
+.inputBox {
+  grid-column: span 6;
+  grid-row: span 1;
+  /* background-color: rgba(0, 26, 255, 0.432); */
+}
+
+.users {
+  grid-row: span 11;
+  grid-column: span 2;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+  color: rgb(145, 145, 145);
+  height: 80%;
+  justify-content: space-between;
+}
+
+.activeContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+}
+
+.activeContainer img {
+  padding-left: 10px;
+}
+
+.textContainer h1 {
+  margin-bottom: 0px;
+}
